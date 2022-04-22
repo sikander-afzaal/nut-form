@@ -33,9 +33,11 @@
 }
 .top-app p {
   color: white;
-  font-size: 1.4rem;
+  margin-top: 0.7rem;
+  font-size: 1.6rem;
   text-align: center;
-  width: 400px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .bottom-app {
   display: flex;
@@ -125,10 +127,10 @@
   background-color: rgb(89, 186, 69);
 }
 .compound {
-  color: rgb(89, 186, 69);
-  background-color: transparent;
+  border: none;
   font-size: 1rem !important;
-  border: 1px solid rgb(89, 186, 69);
+  color: white;
+  background-color: rgb(89, 186, 69);
 }
 .box h2 {
   color: rgb(89, 186, 69);
@@ -155,7 +157,7 @@
 .overlay {
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   inset: 0;
   display: none;
 }
@@ -170,7 +172,6 @@
   background-color: #252525 !important;
   border-radius: 20px !important;
   border: 1px solid #555 !important;
-
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -181,14 +182,14 @@
 }
 .pop {
   flex: 0.5;
-  background: rgb(52, 52, 52);
+  background-color: rgb(251, 241, 225);
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  color: white;
+  color: rgb(109, 109, 109);
   width: 100%;
   gap: 20px;
 }

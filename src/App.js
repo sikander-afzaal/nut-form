@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
 import logo from "./Assets/logo.png";
-import nut from "./Assets/nut.svg";
 import social1 from "./Assets/social1.svg";
 import social2 from "./Assets/social2.svg";
 import social3 from "./Assets/social3.svg";
@@ -30,23 +29,21 @@ function App() {
           <img src={logo} alt="" />
           <h1>GREEN GROWLER</h1>
         </div>
-        <p>
-          The BNB Reward Pool with the tastiest daily return and lowest dev fee
-        </p>
+        <p>Get stinking rich Growing Green</p>
       </div>
       <div className="bottom-app">
         <div className="box">
           <div className="row">
-            <p>Contract</p>
-            <p>7.92 BNB</p>
+            <p>Total Weight</p>
+            <p>7.92 KG</p>
           </div>
           <div className="row">
-            <p>Wallet</p>
+            <p>Your Wallet</p>
             <p>0.00 BNB</p>
           </div>
           <div className="row">
-            <p>Your Nuts</p>
-            <p>0 NUTS</p>
+            <p>Your Seeds</p>
+            <p>0 SEEDS</p>
           </div>
           <input type="text" className="input" />
           <div className="btn-div">
@@ -56,29 +53,31 @@ function App() {
             >
               connect Wallet
             </button>
-            <button className="yellow-btn">Hoard Nuts</button>
+            <button className="yellow-btn">Plant Seeds</button>
+          </div>
+
+          <div className="btn-div">
+            <button className="compound">Feed/Compound</button>
+            <button className="yellow-btn">Sell Green</button>
           </div>
           <div className="row">
-            <p>Your Rewards</p>
+            <p>Profit Made</p>
             <p>0.000 BNB</p>
           </div>
-          <div className="btn-div">
-            <button className="compound">compound nuts</button>
-            <button className="yellow-btn">Hoard Nuts</button>
-          </div>
         </div>
+
         <div className="box">
-          <h2>Nutrition Facts</h2>
+          <h2>Yeild/Consumables</h2>
           <div className="row">
-            <p>Daily Return</p>
+            <p>Daily Profit</p>
             <p>10%</p>
           </div>
           <div className="row">
             <p>APR</p>
-            <p>3,650%</p>
+            <p>3650%</p>
           </div>
           <div className="row">
-            <p>Treasury Fee</p>
+            <p>Pay Off Cops</p>
             <p>10%</p>
           </div>
         </div>
@@ -86,8 +85,7 @@ function App() {
           <h2>Referral Link</h2>
           <input type="text" className="input" />
           <p className="note">
-            Earn 10% of the BNB used to hoard beans from anyone who uses your
-            referral link
+            Get 10% off anything bought by your refferal code
           </p>
         </div>
         <div className="social-div">
