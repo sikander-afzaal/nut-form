@@ -216,6 +216,12 @@
   .pop-up {
     width: 95%;
   }
+  .logo-div img {
+    width: 100px;
+  }
+  .logo-div h1 {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 524px) {
   .btn-div {
