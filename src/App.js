@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import logo from "./Assets/logo2.jpg";
-import logoText from "./Assets/logo-text.png";
+import logo from "./Assets/logo.png";
 import social1 from "./Assets/social1.svg";
 import social2 from "./Assets/social2.svg";
 import social3 from "./Assets/social3.svg";
@@ -26,10 +25,6 @@ function App() {
         </div>
       </div>
       <div className="top-app">
-        {/* <div className="logo-div">
-          <img src={logo} alt="" />
-          <img className="img-text" src={logoText} alt="" />
-        </div> */}
         <img src={logo} alt="" />
         <p>Get stinking rich Growing Green</p>
       </div>

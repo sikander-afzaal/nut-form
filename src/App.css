@@ -9,6 +9,7 @@
   gap: 2rem;
   position: relative;
   padding: 3rem 0rem;
+  overflow-x: hidden;
 }
 .top-app {
   display: flex;
@@ -16,27 +17,16 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  /* padding: 0rem 1rem; */
 }
-.logo-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
+
 .top-app img {
-  max-width: 350px;
+  max-width: 450px;
   object-fit: contain;
 }
-.logo-div img {
-  max-width: 150px;
-  object-fit: contain;
-}
-.logo-div .img-text {
-  max-width: 300px;
-}
+
 .top-app p {
   color: white;
-  margin-top: 0.7rem;
   font-size: 1.6rem;
   text-align: center;
   font-weight: 600;
@@ -239,15 +229,6 @@
   .pop-up {
     width: 95%;
   }
-  .logo-div img {
-    width: 100px;
-  }
-  .logo-div .img-text {
-    width: 200px;
-  }
-  .logo-div h1 {
-    font-size: 1.3rem;
-  }
 }
 @media screen and (max-width: 524px) {
   .btn-div {
@@ -258,6 +239,9 @@
   .btn-div button {
     flex: none;
     width: 100%;
+  }
+  .top-app img {
+    width: 350px;
   }
 }
 @media screen and (max-width: 446px) {
