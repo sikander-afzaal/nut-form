@@ -89,6 +89,29 @@ function App() {
             by your referral code
           </p>
         </div>
+        <div className="box last-box">
+          <p className="note2">
+            Please note: You can not unstake; only withdraw earnings.
+          </p>
+          <ul>
+            <li>⭐Tokenomics:</li>
+            <li>🍀 Rewards can be re-invested & withdrawn daily.</li>
+            <li>
+              ⭐To ensure the max rewards (10% we suggest the following
+              strategy:
+            </li>
+            <li>🍀 Plant Seeds (deposit bnb)</li>
+            <li>🍀 Feed weed 6 days per week </li>
+            <li>
+              🍀 sell weed 1 day per week ( But the choice is yours you can
+              remove rewards daily )
+            </li>
+            <li>
+              🍀 Every deposit/withdrawal has a base tax of 10% to ensure
+              contract longevity, along with an insurance fee
+            </li>
+          </ul>
+        </div>
         <div className="social-div">
           <a href="#">
             <img src={social1} alt="" />

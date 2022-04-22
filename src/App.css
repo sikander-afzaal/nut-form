@@ -205,6 +205,25 @@
 .display-flex {
   display: flex;
 }
+.last-box {
+  gap: 20px;
+}
+.note2 {
+  color: rgb(109, 109, 109);
+  font-size: 1rem;
+}
+.box ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.box ul li {
+  font-size: 1rem;
+  color: rgb(109, 109, 109);
+}
 @media screen and (max-width: 724px) {
   .bottom-app {
     width: 95%;
