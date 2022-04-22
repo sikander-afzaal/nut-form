@@ -35,7 +35,7 @@ function App() {
         <div className="box">
           <div className="row">
             <p>Total Weight</p>
-            <p>7.92 KG</p>
+            <p>0 KG</p>
           </div>
           <div className="row">
             <p>Your Wallet</p>
