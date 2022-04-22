@@ -11,6 +11,7 @@
   min-height: 100vh;
   width: 100%;
   gap: 2rem;
+  position: relative;
   padding: 3rem 0rem;
 }
 .top-app {
@@ -145,12 +146,69 @@
   object-fit: contain;
   width: 100%;
 }
+.overlay {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  display: none;
+}
+
+.pop-up {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  background-color: #252525 !important;
+  border-radius: 20px !important;
+  border: 1px solid #555 !important;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+  gap: 10px;
+  height: 332px;
+}
+.pop {
+  flex: 0.5;
+  background: rgb(52, 52, 52);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  width: 100%;
+  gap: 20px;
+}
+.pop img {
+  max-width: 100%;
+  width: 50px;
+  object-fit: contain;
+}
+.pop h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.display-flex {
+  display: flex;
+}
 @media screen and (max-width: 724px) {
   .bottom-app {
     width: 95%;
   }
   .box {
     width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pop-up {
+    width: 95%;
   }
 }
 @media screen and (max-width: 524px) {

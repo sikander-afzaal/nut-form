@@ -1,12 +1,30 @@
 import "./App.css";
+import React, { useState } from "react";
 import logo from "./Assets/logo.svg";
 import nut from "./Assets/nut.svg";
 import social1 from "./Assets/social1.svg";
 import social2 from "./Assets/social2.svg";
 import social3 from "./Assets/social3.svg";
+import meta from "./Assets/meta.svg";
+import connect from "./Assets/connect.svg";
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
+      <div
+        onClick={() => setOpen((prev) => !prev)}
+        className={`overlay ${open ? "display-flex" : ""}`}
+      ></div>
+      <div className={`pop-up ${open ? "display-flex" : ""}`}>
+        <div className="pop">
+          <img src={meta} alt="" />
+          <h2>MetaMask</h2>
+        </div>
+        <div className="pop">
+          <img src={connect} alt="" />
+          <h2>Wallet Connect</h2>
+        </div>
+      </div>
       <div className="top-app">
         <img src={logo} alt="" />
         <p>
@@ -29,7 +47,10 @@ function App() {
           </div>
           <input type="text" className="input" />
           <div className="btn-div">
-            <button className="connect">
+            <button
+              onClick={() => setOpen((prev) => !prev)}
+              className="connect"
+            >
               connect Wallet <img src={nut} alt="" />
             </button>
             <button className="yellow-btn">Hoard Nuts</button>
