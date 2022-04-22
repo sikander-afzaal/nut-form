@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import logo from "./Assets/logo.svg";
+import logo from "./Assets/logo.png";
 import nut from "./Assets/nut.svg";
 import social1 from "./Assets/social1.svg";
 import social2 from "./Assets/social2.svg";
@@ -26,7 +26,10 @@ function App() {
         </div>
       </div>
       <div className="top-app">
-        <img src={logo} alt="" />
+        <div className="logo-div">
+          <img src={logo} alt="" />
+          <h1>GREEN GROWLER</h1>
+        </div>
         <p>
           The BNB Reward Pool with the tastiest daily return and lowest dev fee
         </p>
@@ -51,7 +54,7 @@ function App() {
               onClick={() => setOpen((prev) => !prev)}
               className="connect"
             >
-              connect Wallet <img src={nut} alt="" />
+              connect Wallet
             </button>
             <button className="yellow-btn">Hoard Nuts</button>
           </div>
