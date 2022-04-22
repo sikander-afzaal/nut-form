@@ -85,7 +85,8 @@ function App() {
           <h2>Referral Link</h2>
           <input type="text" className="input" />
           <p className="note">
-            Get 10% off anything bought by your refferal code
+            Receive 10% Straight into your profits , From any customers Brought
+            by your referral code
           </p>
         </div>
         <div className="social-div">
