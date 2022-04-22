@@ -1,38 +1,172 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  background: #202020 !important;
+  background-image: url("./Assets/bg.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+  min-height: 100vh;
+  width: 100%;
+  gap: 2rem;
+  padding: 3rem 0rem;
+}
+.top-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.top-app img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.top-app p {
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 400px;
+}
+.bottom-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  gap: 20px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(37, 37, 37);
+  border-radius: 20px;
+  border: 1px solid rgb(85, 85, 85);
+  gap: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.row p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.row p:first-child {
+  color: rgb(175, 175, 175);
+}
+.row p:last-child {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.input {
+  width: 100%;
+  width: 100%;
+  color: white;
+  padding: 15px;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid rgb(85, 85, 85);
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input:focus {
+  outline: white;
+  border-color: white;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.btn-div button {
+  flex: 0.5;
+  height: 57px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 8px;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(53, 44, 26);
+  border: 1px solid rgb(77, 64, 39);
+  color: rgb(245, 229, 195);
+}
+.connect:hover {
+  border-width: 2px;
+}
+.yellow-btn {
+  border: none;
+  font-size: 1rem !important;
+  color: black;
+  background-color: rgb(248, 188, 71);
+}
+.compound {
+  color: rgb(248, 188, 71);
+  background-color: transparent;
+  font-size: 1rem !important;
+  border: 1px solid rgb(248, 188, 71);
+}
+.box h2 {
+  color: white;
+  font-size: 1.9rem;
+}
+.note {
+  color: rgb(175, 175, 175);
+  font-size: 0.8rem;
+}
+.social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.social-div a {
+  width: 35px;
+}
+.social-div a img {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+@media screen and (max-width: 724px) {
+  .bottom-app {
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+  .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 524px) {
+  .btn-div {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .btn-div button {
+    flex: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 446px) {
+  .top-app p {
+    width: 95%;
+    font-size: 1.1rem;
   }
 }
