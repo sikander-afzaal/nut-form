@@ -6,6 +6,7 @@ import social2 from "./Assets/social2.svg";
 import social3 from "./Assets/social3.svg";
 import meta from "./Assets/meta.svg";
 import connect from "./Assets/connect.svg";
+import Roadmap from "./Components/Roadmap";
 function App() {
   const [open, setOpen] = useState(false);
   return (
@@ -109,6 +110,7 @@ function App() {
             </li>
           </ul>
         </div>
+        <Roadmap />
         <div className="social-div">
           <a href="#">
             <img src={social1} alt="" />
