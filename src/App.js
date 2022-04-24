@@ -11,6 +11,9 @@ function App() {
   const [open, setOpen] = useState(false);
   return (
     <div className="App">
+      <a href="#roadmap" className="link">
+        Roadmap
+      </a>
       <div
         onClick={() => setOpen((prev) => !prev)}
         className={`overlay ${open ? "display-flex" : ""}`}
@@ -65,7 +68,7 @@ function App() {
         </div>
 
         <div className="box">
-          <h2>Yeild/Consumables</h2>
+          <h2>Yield/Consumables</h2>
           <div className="row">
             <p>Daily Profit</p>
             <p>10%</p>
@@ -92,16 +95,16 @@ function App() {
             Please note: You can not unstake; only withdraw earnings.
           </p>
           <ul>
-            <li>🍀Tokenomics:</li>
+            <li>🍀 Tokenomics:</li>
             <li>🍀 Rewards can be re-invested & withdrawn daily.</li>
             <li>
-              🍀To ensure the max rewards (10% we suggest the following
+              🍀 To ensure the max rewards (10% we suggest the following
               strategy:
             </li>
             <li>🍀 Plant Seeds (deposit bnb)</li>
             <li>🍀 Feed weed 6 days per week </li>
             <li>
-              🍀 sell weed 1 day per week ( But the choice is yours you can
+              🍀 Sell weed 1 day per week ( But the choice is yours you can
               remove rewards daily )
             </li>
             <li>

@@ -7,7 +7,7 @@ import arrowMob2 from "../Assets/arrow2-mob.png";
 import money from "../Assets/money.png";
 function Roadmap() {
   return (
-    <div className="roadmap">
+    <div id="roadmap" className="roadmap">
       <div className="road-cont">
         <div className="top-roadmap">
           <img src={logo} alt="" />
