@@ -10,7 +10,6 @@ function Roadmap() {
     <div id="roadmap" className="roadmap">
       <div className="road-cont">
         <div className="top-roadmap">
-          <img src={logo} alt="" />
           <h1>ROADMAP</h1>
         </div>
         <div className="bot-roadmap">

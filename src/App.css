@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(-125deg, #59ba45, #000 60%);
+  background-image: linear-gradient(45deg, #86bd60, #11cc65);
   min-height: 100vh;
   width: 100%;
   gap: 2rem;
@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 700px;
+  width: 915px;
   gap: 20px;
 }
 .box {
@@ -149,6 +149,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+  padding-top: 3rem;
 }
 .social-div a {
   width: 35px;
@@ -228,7 +229,7 @@
   font-size: 1rem;
   color: rgb(109, 109, 109);
 }
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 932px) {
   .bottom-app {
     width: 95%;
   }
