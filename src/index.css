@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(-125deg, black, #11cc65);
+  background-image: linear-gradient(-125deg, #59ba45, #000 60%);
 }
 .App {
   width: 100%;
