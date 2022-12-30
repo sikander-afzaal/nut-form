@@ -1,14 +1,19 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./Pages/Landing";
 import Mint from "./Pages/Mint";
 import Sidebar from "./Layout/Sidebar";
 import Buds from "./Pages/Buds";
+import ConnectModal from "./Components/ConnectModal";
 function App() {
+  const [connectModal, setConnectModal] = useState(false);
   return (
     <div className="App">
-      <button className="connect-btn">Connect Wallet</button>
+      {connectModal && <ConnectModal setModal={setConnectModal} />}
+      <button className="connect-btn" onClick={() => setConnectModal(true)}>
+        Connect Wallet
+      </button>
       <Sidebar />
       <Routes>
         <Route element={<Landing />} path="/" />

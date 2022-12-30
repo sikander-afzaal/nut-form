@@ -164,15 +164,16 @@
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.7);
   inset: 0;
-  display: none;
+  display: block;
+  z-index: 100;
 }
 
 .pop-up {
   position: fixed;
-  display: none;
+  display: flex;
   top: 50%;
   left: 50%;
-  z-index: 4;
+  z-index: 101;
   transform: translate(-50%, -50%);
   background-color: #252525 !important;
   border-radius: 20px !important;
@@ -207,9 +208,7 @@
   font-size: 1rem;
   text-transform: uppercase;
 }
-.display-flex {
-  display: flex;
-}
+
 .last-box {
   gap: 20px;
 }

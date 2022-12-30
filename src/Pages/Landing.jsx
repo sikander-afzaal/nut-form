@@ -4,9 +4,9 @@ import logo from "../Assets/logo.png";
 import social1 from "../Assets/social1.svg";
 import social2 from "../Assets/social2.svg";
 import social3 from "../Assets/social3.svg";
-import meta from "../Assets/meta.svg";
-import connect from "../Assets/connect.svg";
+
 import Roadmap from "../Components/Roadmap";
+import ConnectModal from "../Components/ConnectModal";
 function Landing() {
   const [open, setOpen] = useState(false);
   return (
@@ -14,20 +14,7 @@ function Landing() {
       <a href="#roadmap" className="link">
         Roadmap
       </a>
-      <div
-        onClick={() => setOpen((prev) => !prev)}
-        className={`overlay ${open ? "display-flex" : ""}`}
-      ></div>
-      <div className={`pop-up ${open ? "display-flex" : ""}`}>
-        <div className="pop">
-          <img src={meta} alt="" />
-          <h2>MetaMask</h2>
-        </div>
-        <div className="pop">
-          <img src={connect} alt="" />
-          <h2>Wallet Connect</h2>
-        </div>
-      </div>
+      {open && <ConnectModal setModal={setOpen} />}
       <div className="top-app">
         <img src={logo} alt="" />
         <p>Get stinking rich Growing Green</p>
