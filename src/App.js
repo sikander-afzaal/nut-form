@@ -8,6 +8,7 @@ import Buds from "./Pages/Buds";
 function App() {
   return (
     <div className="App">
+      <button className="connect-btn">Connect Wallet</button>
       <Sidebar />
       <Routes>
         <Route element={<Landing />} path="/" />
