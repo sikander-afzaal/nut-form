@@ -26,10 +26,10 @@ const Sidebar = () => {
           Homepage
         </Link>
         <Link onClick={() => setSideToggle(false)} to="/mint">
-          Mint Buds
+          Mint Budz
         </Link>
         <Link onClick={() => setSideToggle(false)} to="/my">
-          My Buds
+          My Budz
         </Link>
       </div>
     </>

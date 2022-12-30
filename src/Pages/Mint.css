@@ -49,3 +49,9 @@
   line-height: 1;
   border: 2px solid rgb(89, 186, 69);
 }
+@media screen and (max-width: 850px) {
+  .mint {
+    justify-content: flex-start;
+    padding-top: 150px;
+  }
+}
