@@ -1,0 +1,50 @@
+.mint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  gap: 3rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.mint > img {
+  max-width: 450px;
+  object-fit: contain;
+}
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.calc button {
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.7rem;
+  color: white;
+  background-color: rgb(89, 186, 69);
+}
+.calc > p {
+  width: 80px;
+  height: 50px;
+  background-color: white;
+  color: rgb(89, 186, 69);
+  font-size: 1.7rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1;
+  border: 2px solid rgb(89, 186, 69);
+}

@@ -1,0 +1,263 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  gap: 2rem;
+  position: relative;
+  padding: 3rem 0rem;
+  overflow-x: hidden;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+.link:hover {
+  border-color: white;
+}
+.top-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  /* padding: 0rem 1rem; asd*/
+}
+
+.top-app img {
+  max-width: 450px;
+  object-fit: contain;
+}
+
+.top-app p {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.bottom-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(251, 241, 225);
+  border-radius: 20px;
+  border: 1px solid rgb(85, 85, 85);
+  gap: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.row p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.row p:first-child {
+  color: rgb(109, 109, 109);
+}
+.row p:last-child {
+  color: rgb(89, 186, 69);
+}
+.input {
+  width: 100%;
+  width: 100%;
+  color: rgb(109, 109, 109);
+  padding: 15px;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid rgb(109, 109, 109);
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.input:focus {
+  outline: rgb(89, 186, 69);
+  border-color: rgb(89, 186, 69);
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.btn-div button {
+  flex: 0.5;
+  height: 57px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 8px;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(109, 109, 109);
+  border: 1px solid rgb(77, 64, 39);
+  color: white;
+}
+.connect:hover {
+  border-width: 2px;
+}
+.yellow-btn {
+  border: none;
+  font-size: 1rem !important;
+  color: white;
+  background-color: rgb(89, 186, 69);
+}
+.compound {
+  border: none;
+  font-size: 1rem !important;
+  color: white;
+  background-color: rgb(89, 186, 69);
+}
+.box h2 {
+  color: rgb(89, 186, 69);
+  font-size: 1.9rem;
+}
+.note {
+  color: rgb(109, 109, 109);
+  font-size: 0.8rem;
+}
+.social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 3rem;
+}
+.social-div a {
+  width: 35px;
+}
+.social-div a img {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.overlay {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  display: none;
+}
+
+.pop-up {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  background-color: #252525 !important;
+  border-radius: 20px !important;
+  border: 1px solid #555 !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+  gap: 10px;
+  height: 332px;
+}
+.pop {
+  flex: 0.5;
+  background-color: rgb(251, 241, 225);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(109, 109, 109);
+  width: 100%;
+  gap: 20px;
+}
+.pop img {
+  max-width: 100%;
+  width: 50px;
+  object-fit: contain;
+}
+.pop h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.display-flex {
+  display: flex;
+}
+.last-box {
+  gap: 20px;
+}
+.note2 {
+  color: rgb(109, 109, 109);
+  font-size: 1rem;
+}
+.box ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.box ul li {
+  font-size: 1rem;
+  color: rgb(109, 109, 109);
+}
+@media screen and (max-width: 932px) {
+  .bottom-app {
+    width: 95%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pop-up {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 524px) {
+  .btn-div {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .btn-div button {
+    flex: none;
+    width: 100%;
+  }
+  .top-app img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .top-app p {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+}

@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 .roadmap {
-  width: 100vw;
+  width: 100%;
   height: auto;
   /* background-image: linear-gradient(to right, #59ba45 60%, black); */
   display: flex;
