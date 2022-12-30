@@ -22,9 +22,15 @@ const Sidebar = () => {
         <AiOutlineMenu onClick={() => setSideToggle(true)} className="toggle" />
       )}
       <div className={`sidebar ${sideToggle ? "active-side" : ""}`}>
-        <Link to="/">Homepage</Link>
-        <Link to="/mint">Mint Buds</Link>
-        <Link to="/my">My Buds</Link>
+        <Link onClick={() => setSideToggle(false)} to="/">
+          Homepage
+        </Link>
+        <Link onClick={() => setSideToggle(false)} to="/mint">
+          Mint Buds
+        </Link>
+        <Link onClick={() => setSideToggle(false)} to="/my">
+          My Buds
+        </Link>
       </div>
     </>
   );

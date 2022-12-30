@@ -1,20 +1,20 @@
 import "./Landing.css";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import logo from "../Assets/logo.png";
 import social1 from "../Assets/social1.svg";
 import social2 from "../Assets/social2.svg";
 import social3 from "../Assets/social3.svg";
 
 import Roadmap from "../Components/Roadmap";
-import ConnectModal from "../Components/ConnectModal";
+// import ConnectModal from "../Components/ConnectModal";
 function Landing() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   return (
     <div className="landing">
       <a href="#roadmap" className="link">
         Roadmap
       </a>
-      {open && <ConnectModal setModal={setOpen} />}
+      {/* {open && <ConnectModal setModal={setOpen} />} */}
       <div className="top-app">
         <img src={logo} alt="" />
         <p>Get stinking rich Growing Green</p>
@@ -35,13 +35,15 @@ function Landing() {
           </div>
           <input type="text" className="input" />
           <div className="btn-div">
-            <button
+            {/* <button
               onClick={() => setOpen((prev) => !prev)}
               className="connect"
             >
               connect Wallet
+            </button> */}
+            <button style={{ flex: 1 }} className="yellow-btn">
+              Plant Seeds
             </button>
-            <button className="yellow-btn">Plant Seeds</button>
           </div>
 
           <div className="btn-div">
