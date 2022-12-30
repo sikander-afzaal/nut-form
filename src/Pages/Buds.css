@@ -1,6 +1,6 @@
 .buds {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
@@ -8,6 +8,7 @@
   gap: 3rem;
   position: relative;
   overflow-x: hidden;
+  padding-top: 150px;
 }
 .buds p {
   font-size: 40px;
