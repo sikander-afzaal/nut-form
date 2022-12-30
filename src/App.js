@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Landing from "./Pages/Landing";
 import Mint from "./Pages/Mint";
 import Sidebar from "./Layout/Sidebar";
+import Buds from "./Pages/Buds";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route element={<Landing />} path="/" />
         <Route element={<Mint />} path="/mint" />
+        <Route element={<Buds />} path="/my" />
       </Routes>
     </div>
   );

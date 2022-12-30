@@ -23,8 +23,8 @@ const Sidebar = () => {
       )}
       <div className={`sidebar ${sideToggle ? "active-side" : ""}`}>
         <Link to="/">Homepage</Link>
-        <Link to="/mint">Mint</Link>
-        <Link to="/">Mint</Link>
+        <Link to="/mint">Mint Buds</Link>
+        <Link to="/my">My Buds</Link>
       </div>
     </>
   );

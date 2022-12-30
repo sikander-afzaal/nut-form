@@ -1,0 +1,23 @@
+.buds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  gap: 3rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.buds p {
+  font-size: 40px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .buds p {
+    font-size: 35px;
+  }
+}
